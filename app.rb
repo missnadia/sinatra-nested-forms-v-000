@@ -13,6 +13,8 @@ module FormsLab
       params[:pirate][:ships].each { |details| Ship.new(details) }
 
       @ships = Ship.all
+
+      erb :pirate
     end
   end
 end
